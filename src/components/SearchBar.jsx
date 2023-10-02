@@ -46,7 +46,8 @@ export default function SearchBar({
     <div className="relative">
       <input
         type="text"
-        className="border w-full h-10 focus:outline-blue-500 rounded-sm"
+        placeholder="Search product"
+        className="border text-sm px-2 w-full h-10 focus:outline-blue-500 rounded-sm"
         value={search}
         onChange={(e) => {
           setIsLoading(true);
