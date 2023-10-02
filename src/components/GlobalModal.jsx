@@ -37,7 +37,7 @@ export default function GlobalModal({ viewProduct, clearModal }) {
     return (
       <div className="grid grid-cols-1 p-2 gap-2 rounded-sm  bg-[#F9FAFB]">
         <div className="text-sm font-medium">MORE IMAGES</div>
-        <div className="col-span-1 grid grid-cols-3 sm:grid-cols-4 justify-center  items-center">
+        <div className="col-span-1 grid grid-cols-3 gap-1 sm:grid-cols-4 justify-center  items-center">
           {images?.length > 0 && images?.slice(0, 4)?.map(renderImg)}
         </div>
       </div>
@@ -46,7 +46,7 @@ export default function GlobalModal({ viewProduct, clearModal }) {
 
   const renderImg = (imageUrl) => (
     <div className="flex justify-center items-center">
-      <img className="w-fit h-fit sm:h-36 " src={imageUrl} alt={imageUrl} />
+      <img className="w-fit h-fit sm:h-32 " src={imageUrl} alt={imageUrl} />
     </div>
   );
 
